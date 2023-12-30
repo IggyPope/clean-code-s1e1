@@ -19,23 +19,23 @@ var createNewTaskElement=function(taskString){
 
   var listItem=document.createElement('li');
 
-    //input (checkbox)
+  //input (checkbox)
   var checkBox=document.createElement('input');//checkbx
-    //label
+  //label
   var label=document.createElement('label');//label
-    //input (text)
+  //input (text)
   var editInput=document.createElement('input');//text
-    //button.edit
+  //button.edit
   var editButton=document.createElement('button');//edit button
 
-    //button.delete
+  //button.delete
   var deleteButton=document.createElement('button');//delete button
   var deleteButtonImg=document.createElement('img');//delete button image
 
   label.innerText=taskString;
   label.className='task';
 
-    //Each elements, needs appending
+  //Each elements, needs appending
   checkBox.type='checkbox';
   editInput.type='text';
   editInput.className='task';
@@ -48,7 +48,7 @@ var createNewTaskElement=function(taskString){
   deleteButton.appendChild(deleteButtonImg);
 
 
-    //and appending.
+  //and appending.
   listItem.appendChild(checkBox);
   listItem.appendChild(label);
   listItem.appendChild(editInput);
@@ -89,13 +89,13 @@ var editTask=function(){
   //If class of the parent is .editmode
   if(containsClass){
 
-      //switch to .editmode
-      //label becomes the inputs value.
-      label.innerText=editInput.value;
-      editBtn.innerText='Edit';
+    //switch to .editmode
+    //label becomes the inputs value.
+    label.innerText=editInput.value;
+    editBtn.innerText='Edit';
   }else{
-      editInput.value=label.innerText;
-      editBtn.innerText='Save';
+    editInput.value=label.innerText;
+    editBtn.innerText='Save';
   }
 
   //toggle .editmode on the parent.
