@@ -1,3 +1,18 @@
+/* Style resets */
+ul {
+  margin: 0;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
 /* Basic Style */
 .app {
   background-color: #f8f8f8;
@@ -39,7 +54,6 @@
 
 .task__btn {
   background: none;
-  outline: none;
   border: 0px;
   color: #888;
   font-size: 15px;
@@ -64,13 +78,7 @@
 }
 
 /* Task list */
-.task-list {
-  margin: 0;
-  padding: 0;
-}
-
 .task {
-  list-style: none;
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -86,7 +94,6 @@
 
 .task__status-toggle {
   margin: 0 10px;
-  outline: none;
 }
 
 .task__name-label {
@@ -105,7 +112,6 @@
   padding: 0 9px;
   border: 1px solid #ddd;
   background: #fff;
-  outline: none;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
